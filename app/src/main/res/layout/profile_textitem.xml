@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_textitem"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="?attr/textColor"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_text"
+        app:layout_constraintVertical_bias="0.466">
+
+        <ImageButton
+            android:id="@+id/TextFeed_LikeButton"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:tint="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_favorite_24px" />
+
+        <ImageView
+            android:id="@+id/TextFeed_LikeButtonRED"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:tint="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_favorite_24px" />
+
+        <TextView
+            android:id="@+id/TextFeed_LikeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="textStart"
+            android:textColor="?attr/textColor"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/TextFeed_Comments"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/TextFeed_LikeButton"
+            tools:layout_editor_absoluteY="5dp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/TextFeed_Comments"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:tint="@color/purple"
+            app:layout_constraintEnd_toStartOf="@+id/TextFeed_CommentNumber"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/TextFeed_LikeButton"
+            app:srcCompat="@drawable/ic_cloud"
+            tools:layout_editor_absoluteY="0dp">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/TextFeed_CommentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:text="0"
+            android:textColor="?attr/textColor"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/TextFeed_Comments"
+            tools:layout_editor_absoluteY="0dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextFeed_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="40dp"
+            android:text="12.03.2021 / 00.00.00"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="16dp">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/TextFeed_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_delete"
+            android:backgroundTint="@color/grey"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TextFeed_Date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

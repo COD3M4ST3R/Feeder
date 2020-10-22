@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#B3B6B7</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#fcfcfc</item>
+        <item name="textColor">#808080</item>
+        <item name="feedButtonColor">@color/green</item>
+        <item name="menuItem">@color/menuItem</item>
+
+    </style>
+
+
+    <!-- Theme.AppCompat.Light.NoActionBar -->
+
+    <!-- Dark Mode -->
+    <style name="DarkMode" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:statusBarColor">#212121</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#B3B6B7</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#212121</item>
+        <item name="textColor">#ffffff</item>
+        <item name="feedButtonColor">@color/blue</item>
+        <item name="menuItem">@color/grey</item>
+
+    </style>
+
+
+</resources>

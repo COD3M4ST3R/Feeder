@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Feeder</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+
+    <string name="Comments">Comments</string>
+    <string name="Notifications">Notifications</string>
+    <string name="is_now_following_you">is now following you</string>
+    <string name="VERSION">VERSION</string>
+    <string name="Planned_Update">Planned Update:</string>
+    <string name="All_Rights_Reserved">All Rights Reserved</string>
+    <string name="Enter_Your_Suggestions_Here">Enter Your Suggestions Here</string>
+    <string name="Send">Send</string>
+    <string name="Follow">Follow</string>
+    <string name="Followers">Followers</string>
+    <string name="Following">Following</string>
+    <string name="Explain_the_problem_here">Explain the problem here</string>
+    <string name="Can_we_contact_with_you_about_the_problem">Can we contact with you about the problem?</string>
+    <string name="Logging_Out">Logging Out&#8230;</string>
+    <string name="Request_Ticket">Request Ticket</string>
+    <string name="Suggestions">Suggestions</string>
+    <string name="Terms_Of_Use">Terms Of Use</string>
+    <string name="Updates">Updates</string>
+    <string name="Report_Problem">Report Problem</string>
+    <string name="Welcome_Message">Welcome To Feeder!\n\n\nYou can search for your friends by going to Search page to follow your friends\n\nGo to Discover page to get Feed from all across the World!</string>
+    <string name="Search">Search Feeders&#8230;</string>
+    <string name="Add_your_comment_here">Add your comment here</string>
+    <string name="REGISTER">REGISTER</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="Dark_Side">Dark Side</string>
+    <string name="Delete_Account">Delete Account</string>
+    <string name="Verify_E_Mail">Verify E-Mail</string>
+    <string name="Security">Security</string>
+    <string name="Privacy">Privacy</string>
+    <string name="Full_Name">Full Name</string>
+    <string name="User_Name">User Name</string>
+    <string name="Password">Password</string>
+    <string name="I_agree_to_the_Feeder_Terms_Of_Use">I agree to the Feeder Terms Of Use</string>
+    <string name="Enter_Your_Feed">Enter Your Feed</string>
+    <string name="Register_Here">Do Not Have an Account? Register Here</string>
+    <string name="Forgot_Your_Password">Forgot Your Password?</string>
+    <string name="Save_Changes">Save Changes</string>
+    <string name="Proceed_To_Delete">Enter Your E-Mail and Password to Proceed</string>
+    <string name="Delete_Comment">Delete Comment?</string>
+    <string name="Discover">Discover</string>
+    <string name="Preferences">Preferences</string>
+    <string name="Settings">Settings</string>
+    <string name="Communicate">Communicate</string>
+    <string name="Share">Share</string>
+    <string name="Info">Info</string>
+    <string name="log_Out">Log Out</string>
+    <string name="Change_Reset_Password">Enter Your E-Mail to Change / Reset Password</string>
+    <string name="Private_Account">This Account is Private. You Cannot See Feeds Of Private Account Unless Owner Of Account Follows You</string>
+    <string name="Private_Account_Settings">Private Account</string>
+    <string name="Answer_Question">Answer Today\'s Question!</string>
+
+</resources>

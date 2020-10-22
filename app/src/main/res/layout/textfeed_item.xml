@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="310dp">
+
+    <LinearLayout
+        android:id="@+id/TextFeed_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/TextFeed_UserImage"
+            android:layout_width="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="70dp"
+
+            app:srcCompat="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextFeed_FullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="?attr/textColor"
+                    android:layout_marginStart="10dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextFeed_UserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="User Name"
+                    android:textSize="15sp"
+                    android:textColor="#b2b2b2">
+                </TextView>
+
+            </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/TextFeed_FeedButton"
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:tint="?attr/feedButtonColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_menu_feed">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/TextFeed_Report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/ic_report"
+                android:backgroundTint="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+        <TextView
+            android:id="@+id/TextFeed_Text"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="?attr/textColor"
+            android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release. End Here">
+        </TextView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/TextFeed_LikeButton"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:tint="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_favorite_24px" />
+
+        <ImageView
+            android:id="@+id/TextFeed_LikeButtonRED"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:tint="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_favorite_24px" />
+
+        <TextView
+            android:id="@+id/TextFeed_LikeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="textStart"
+            android:textColor="?attr/textColor"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/TextFeed_Comments"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/TextFeed_LikeButton"
+            tools:layout_editor_absoluteY="5dp">
+        </TextView>
+
+
+        <ImageButton
+            android:id="@+id/TextFeed_Comments"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:tint="@color/purple"
+            app:layout_constraintEnd_toStartOf="@+id/TextFeed_CommentNumber"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/TextFeed_LikeButton"
+            app:srcCompat="@drawable/ic_cloud"
+            tools:layout_editor_absoluteY="0dp">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/TextFeed_CommentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:text="0"
+            android:textColor="?attr/textColor"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/TextFeed_Comments"
+            tools:layout_editor_absoluteY="0dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextFeed_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="40dp"
+            android:text="12.03.2021 / 00.00.00"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="16dp">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/grey" />
+
+</LinearLayout>
+

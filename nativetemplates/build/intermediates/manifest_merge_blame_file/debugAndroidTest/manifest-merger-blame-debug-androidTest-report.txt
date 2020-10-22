@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.android.ads.nativetemplates.test" >
+4
+5    <uses-sdk
+5-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:5:15-41
+7        android:targetSdkVersion="28" />
+7-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:5:42-71
+8
+9    <instrumentation
+9-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:11:5-15:93
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:11:22-76
+11        android:functionalTest="false"
+11-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:14:22-52
+12        android:handleProfiling="false"
+12-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:13:22-53
+13        android:label="Tests for com.google.android.ads.nativetemplates.test"
+13-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:15:22-91
+14        android:targetPackage="com.google.android.ads.nativetemplates.test" />
+14-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:12:22-89
+15    <!-- Include required permissions for Google Mobile Ads to run -->
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:23:5-67
+16-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:23:22-64
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:24:5-79
+17-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:24:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[com.google.android.gms:play-services-measurement-sdk-api:17.1.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\c067d1ef1a8c4221a01b65efe835b231\play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:25:5-68
+18-->[com.google.android.gms:play-services-measurement-sdk-api:17.1.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\c067d1ef1a8c4221a01b65efe835b231\play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:25:22-65
+19
+20    <application
+20-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:7:5-9:19
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\cdf12fde5467c14e3792a03af6b49cd1\core-1.1.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+22-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:7:18-43
+23        android:supportsRtl="true" >
+23-->[__tested_artifact__::nativetemplates] C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:18-44
+24        <uses-library android:name="android.test.runner" />
+24-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:8:9-60
+24-->C:\Users\nadir\AndroidStudioProjects\Social\nativetemplates\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4922754231013727624.xml:8:23-57
+25        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+26        <activity
+26-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:29:9-33:64
+27            android:name="com.google.android.gms.ads.AdActivity"
+27-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:30:13-65
+28            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+28-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:31:13-122
+29            android:exported="false"
+29-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:32:13-37
+30            android:theme="@android:style/Theme.Translucent" />
+30-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:33:13-61
+31
+32        <provider
+32-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:35:9-39:39
+33            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+33-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:36:13-76
+34            android:authorities="com.google.android.ads.nativetemplates.test.mobileadsinitprovider"
+34-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:37:13-73
+35            android:exported="false"
+35-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:38:13-37
+36            android:initOrder="100" />
+36-->[com.google.android.gms:play-services-ads-lite:18.3.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\372a87a507dbf84f9b29c63f65975a85\play-services-ads-lite-18.3.0\AndroidManifest.xml:39:13-36
+37
+38        <meta-data
+38-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\eb49195136837c41b18dce80fbf3c3b7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+39            android:name="com.google.android.gms.version"
+39-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\eb49195136837c41b18dce80fbf3c3b7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+40            android:value="@integer/google_play_services_version" />
+40-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nadir\.gradle\caches\transforms-2\files-2.1\eb49195136837c41b18dce80fbf3c3b7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+41    </application>
+42
+43</manifest>

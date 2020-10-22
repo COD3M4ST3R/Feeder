@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/pulse_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"
+                    android:scaleType="center"
+                    android:background="@drawable/circle3">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/pulse_2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"
+                    android:scaleType="center"
+                    android:background="@drawable/circle3">
+                </ImageView>
+
+                <ImageButton
+                    android:id="@+id/SearchedProfile_ProfileButton"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="35dp" />
+
+                <ImageView
+                    android:id="@+id/circle"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:background="@drawable/circle_list"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp">
+                </ImageView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Profile_CircleImage"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="80dp" />
+
+
+                <TextView
+                    android:id="@+id/SearchedProfile_DisplayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="65dp"
+                    android:text="Display Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp">
+                </TextView>
+
+
+                <Button
+                    android:id="@+id/Button_Follow"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="315dp"
+                    android:background="@drawable/circle2"
+                    android:backgroundTint="@android:color/holo_purple"
+                    android:text="@string/Follow"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp">
+                </Button>
+
+                <Button
+                    android:id="@+id/Button_Feed"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="315dp"
+                    android:background="@drawable/circle2"
+                    android:backgroundTint="@android:color/holo_purple"
+                    android:text="FEED"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp">
+                </Button>
+
+
+                <Button
+                    android:id="@+id/Button_FeedIndicator"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="315dp"
+                    android:background="@drawable/ic_menu_feed"
+                    android:backgroundTint="@color/green">
+                </Button>
+
+                <Button
+                    android:id="@+id/SearchedProfile_FeedButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="380dp" />
+
+                <Button
+                    android:id="@+id/SearchedProfile_FollowersButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="380dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/SearchedProfile_FollowingButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginTop="380dp">
+                </Button>
+
+                <TextView
+                    android:id="@+id/SearchedProfile_Feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="50dp"
+                    android:gravity="bottom"
+                    android:text="Feed"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/SearchedProfile_Followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="@string/Followers"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/SearchedProfile_Following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/Following"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/SearchedProfile_FeedNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="bottom"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/SearchedProfile_FollowersNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="bottom"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/SearchedProfile_FollowingNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/SearchedProfile_Bio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="75"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="?attr/textColor"
+                android:textSize="15sp">
+            </TextView>
+
+        </FrameLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/click"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </Button>
+
+        <ImageView
+            android:id="@+id/locked_symbol"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/ic_lock"
+            android:backgroundTint="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.544">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/locked_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Private_Account"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:layout_marginTop="425dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.605" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/Profile_ProfileButton"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp" />
+
+                <ImageView
+                    android:id="@+id/circle"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:background="@drawable/circle_list"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp">
+                </ImageView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Profile_CircleImage"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="50dp" />
+
+
+                <TextView
+                    android:id="@+id/Profile_DisplayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="90dp"
+                    android:text="Display Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp">
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/Profile_Feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="50dp"
+                    android:gravity="bottom"
+                    android:text="Feed"
+                    android:textColor="#b2b2b2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Profile_Followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="@string/Followers"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Profile_Following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/Following"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Profile_FeedNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="50dp"
+                    android:gravity="bottom"
+                    android:text="0"
+                    android:layout_marginBottom="25dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Profile_FollowersNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="25dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Profile_FollowingNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/Profile_FeedButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="320dp" />
+
+
+                <Button
+                    android:id="@+id/Profile_FollowersButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="320dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/Profile_FollowingButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="320dp">
+                </Button>
+
+                <ImageButton
+                    android:id="@+id/Profile_Edit"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_edit"
+                    android:backgroundTint="@color/grey" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/grey" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/Profile_Bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:maxLength="75"
+                    android:textColor="?attr/textColor"
+                    android:textAlignment="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textSize="15sp">
+                </TextView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:overScrollMode="never"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/click"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/followList_Name"
+        android:textStyle="italic|bold"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textColor="#b2b2b2"
+        android:text="Followers Of username"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp">
+    </TextView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/followList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
