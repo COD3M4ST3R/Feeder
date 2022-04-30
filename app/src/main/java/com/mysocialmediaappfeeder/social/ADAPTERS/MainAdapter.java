@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -147,7 +146,6 @@ public class MainAdapter extends RecyclerView.Adapter
                         likeCounter(mData.get(holder.getAdapterPosition()), viewHolderTwo.ImageFeed_LikeNumber);
                         changeButton(mData.get(holder.getAdapterPosition()), viewHolderTwo.ImageFeed_LikeButtonRED);
                         commentCounter(mData.get(holder.getAdapterPosition()), viewHolderTwo.ImageFeed_CommentNumber);
-
 
                         //  CHECK FEED BUTTON
                         feedCheck(mData.get(holder.getAdapterPosition()), viewHolderTwo.ImageFeed_FeedButton, viewHolderTwo.ImageFeed_Report);
